@@ -1,0 +1,5 @@
+19_01_auth:
+  url: http://localhost:3000/api/users/signup
+  method: POST
+  headers: {}
+  body: "{\r\n  \"username\":\"Devansh\",\r\n  \"email\":\"devanshh@gmail.com\",\r\n  \"password\":\"Devansh\"\r\n}"

@@ -1,0 +1,25 @@
+19_01_auth:  # 19/1/2024, 16:11:45:768
+  request:
+    url: http://localhost:3000/api/users/signup
+    method: POST
+    headers: {}
+    body: |-
+      {
+        "username":"Devansh",
+        "email":"devanshh@gmail.com",
+        "password":"Devansh"
+      }
+  response:  # 156 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-type: application/json
+      date: Fri, 19 Jan 2024 10:41:45 GMT
+      transfer-encoding: chunked
+      vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url
+    body: |-
+      {
+        "msg": "$2b$10$DtiOwg/pKSS/9TCsDSFYQO5w2XWubkoc5jU9UUpdCndrVh6ZE2MuW"
+      }

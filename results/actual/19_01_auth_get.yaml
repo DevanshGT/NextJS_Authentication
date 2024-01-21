@@ -1,0 +1,83 @@
+19_01_auth_get:  # 19/1/2024, 23:41:15:564
+  request:
+    url: http://localhost:3000/api/users/signup
+    method: GET
+    headers: {}
+  response:  # 2079 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-type: application/json
+      date: Fri, 19 Jan 2024 18:11:17 GMT
+      transfer-encoding: chunked
+      vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url
+    body: |-
+      [
+        {
+          "_id": "65aa7319796a4866367b2dba",
+          "name": "ddd",
+          "email": "ddd@gmail.comm",
+          "text": "$2b$10$ufk0Z4L7QNAJb.hvaKxe2uCYoPo/MNMnOmT0Qo5rn.hoHiQIUPXNO",
+          "movie_id": "65aa7319af4ab01064f39609",
+          "__v": 0
+        },
+        {
+          "_id": "65aa725a796a4866367b2db5",
+          "name": "raju",
+          "email": "raju1@gmail.com",
+          "text": "$2b$10$5gl/wClQK2XCiPdghnUVmeaz8GgDE7IgWSC8Y6ANYwlVuxSbC/0q6",
+          "movie_id": "65aa725a0be294fae43a5994",
+          "__v": 0
+        },
+        {
+          "_id": "65aa6f69796a4866367b2da7",
+          "name": "dog",
+          "email": "dog@gmail.com",
+          "text": "$2b$10$JuT/RBVLkm3Z8TuMohqNa.tCRwp4/TEgl6aoskdNywvfQSFrwr9D.",
+          "movie_id": "65aa6f6939b1e778635187a1",
+          "__v": 0
+        },
+        {
+          "_id": "65aa6c3e796a4866367b2da2",
+          "name": "cat",
+          "email": "cat@gmail.com",
+          "text": "$2b$10$Njm5kRw537MxbjDki7PHXOIRBiZ0Tr.a8cp1Od38w1w6mJ3E9dOKG",
+          "movie_id": "65aa6c3ef9d90823ff8d7d9e",
+          "__v": 0
+        },
+        {
+          "_id": "65aa6bcc4a5002b4f88e75f1",
+          "name": "santoshnaldo",
+          "email": "cr7@gmail.com",
+          "movie_id": "65aa6bccd0e55a7ea9809777",
+          "__v": 0
+        },
+        {
+          "_id": "65aa6b064a5002b4f88e75ec",
+          "email": "ddd@gmail.com",
+          "movie_id": "65aa6b062bc6ed04d22c2798",
+          "__v": 0
+        },
+        {
+          "_id": "65aa673ccf920314e2f71729",
+          "email": "pritesh@saiyad.com",
+          "__v": 0
+        },
+        {
+          "_id": "65aa5a46a11cf1a42d5466fd",
+          "email": "vishal@gmail.com",
+          "__v": 0
+        },
+        {
+          "_id": "65aa59cca11cf1a42d5466f9",
+          "email": "raju@gmail.com",
+          "__v": 0
+        },
+        {
+          "_id": "65aa58c0a11cf1a42d5466f4",
+          "email": "devansh@gmail.com",
+          "__v": 0
+        }
+      ]
