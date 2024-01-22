@@ -1,17 +1,25 @@
 "use client"
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
+// import { SignIn } from "@clerk/nextjs"
+import {signIn} from "next-auth/react"
 export default function Userform() {
     const [error, setError] = useState({})
     const [loading, setLoading] = useState(true)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const router = useRouter()
-    const addUser = async () => {
+        const addUser = async () => {
         if(!email || !password){
             alert('error')
             return false
         }
+        const res = signIn("credentials",{
+            email: email,
+            password: password,
+            secret:'asasd7&&*%f8gyuf%^8f',
+            redirect: false
+        })
         let response = await fetch("http://localhost:3000/api/users/login", {
             method: "POST",
             body: JSON.stringify({ "email": email, "password": password})
@@ -21,6 +29,12 @@ export default function Userform() {
             setError(response)
             setLoading(true)
         }else{
+            const res = signIn("credentials",{
+                email: email,
+                password: password,
+                secret:'asasd7&&*%f8gyuf%^8f',
+                redirect: false
+            })
             router.push('/form/home')
         }
     }
